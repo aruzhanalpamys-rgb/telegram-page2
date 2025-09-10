@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Page</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+      width: 450px;
+      height: 800x;
+      flex-direction: column;
+      background-color: bisque;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    h2 {
+      text-align: center;
+      font-weight: 500;
+    }
+    .top img {
+      cursor: pointer;
+    }
+
+    .myphoto {
+      width: 50px;
+      height: 50px;
+    }
+    .anime {
+      width: 50px;
+      height: 50px;
+    }
+    .felixlike {
+      width: 50px;
+      height: 50px;
+    }
+    .web {
+      width: 70px;
+      height: 70px;
+      border-radius: 22px;
+    }
+    .gradus {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    .jihc {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    .dilnoza {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    .felixlike-2 {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    .paradeevich {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    .assel {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    .bottom img {
+      width: 30px;
+      height: 30px;
+    }
+    .stories {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+    .stories img {
+      border-radius: 50%;
+      background-image: linear-gradient(
+        to top,
+        rgb(85, 175, 200),
+        rgb(75, 183, 75)
+      );
+      padding: 3px;
+    }
+    .top {
+      background-color: #1a1a1a;
+    }
+    .top p {
+      font-size: 14px;
+    }
+    input {
+      display: flex;
+      text-align: center;
+      margin-left: 25px;
+      margin-right: 25px;
+      width: 390px;
+      padding: 8px;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      margin-bottom: 10px;
+      background-color: #101010;
+      color: #919191;
+    }
+
+    .stories p {
+      margin-top: 5px;
+    }
+    .first-story {
+      display: flex;
+      flex-direction: column;
+    }
+    .second-story {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .third-story {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .channel {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .channel:hover {
+      background-color: #1d1d1d;
+      padding-top: 5px;
+    }
+
+    .body-page {
+      display: flex;
+      flex-direction: column;
+      background-color: #101010;
+      padding-left: 8px;
+      padding-top: 5px;
+      padding-right: 5px;
+    }
+    .bottom {
+      display: flex;
+      justify-content: center;
+      background-color: #1d1d1d;
+      align-items: center;
+      gap: 80px;
+    }
+    .bottom p {
+      font-size: 10px;
+      color: #919191;
+      margin-top: 5px;
+    }
+    .bottom img {
+      margin-top: 5px;
+    }
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      cursor: pointer;
+    }
+    .contacts p:hover {
+      color: #3f88f7;
+    }
+    .calls p:hover {
+      color: #3f88f7;
+    }
+    .chats p:hover {
+      color: #3f88f7;
+    }
+    .settings p:hover {
+      color: #3f88f7;
+    }
+    .contacts-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 6px;
+    }
+
+    .calls {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .chats {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .settings {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .settings-img {
+      border-radius: 50%;
+      margin-left: 3px;
+    }
+    .channel-name-messages {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 0.5px solid #919191;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      margin: 0;
+      font-weight: 500;
+    }
+    .channel-name-messages p {
+      margin: 0;
+    }
+    .channel p {
+      color: #919191;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h2>Chats</h2>
+        <div class="stories">
+          <div class="first-story">
+            <img class="myphoto" src="myphoto.jpeg" />
+            <p>My Story</p>
+          </div>
+          <div class="second-story">
+            <img class="anime" src="anime.jpeg" />
+            <p>Zhanali</p>
+          </div>
+          <div class="third-story">
+            <img class="felixlike" src="felixlike.jpeg" />
+            <p>Felixlike</p>
+          </div>
+        </div>
+        <input class="search" type="text" placeholder="Search" />
+      </div>
+
+      <div class="body-page">
+        <div class="channel">
+          <img class="web" src="web.jpeg" />
+          <div class="channel-name-messages">
+            <h3>2F1 web 25/26</h3>
+            <p>
+              # General # Homeworks
+              <span style="color: white"><br />Aruzhan:</span>
+              https://aruzhanalpamys-rgb.github.io/nft.
+            </p>
+          </div>
+        </div>
+
+        <div class="channel">
+          <img class="gradus" src="gradus.jpeg" />
+          <div class="channel-name-messages">
+            <h3>451 gradus</h3>
+            <p>
+              Dear participants! 451gradus first game of the new season will
+              take place on 07...
+            </p>
+          </div>
+        </div>
+
+        <div class="channel">
+          <img class="jihc" src="jihc.jpeg" />
+          <div class="channel-name-messages">
+            <h3>jihccounseling</h3>
+            <p>https://mbzuai.ac.ae/study/undergraduate-program/</p>
+          </div>
+        </div>
+
+        <div class="channel">
+          <img class="dilnoza" src="dilnoza.jpeg" />
+          <div class="channel-name-messages">
+            <h3>653322</h3>
+            <p>
+              some quotes. I'm really fall in love with web. I love WEB 100x.
+            </p>
+          </div>
+        </div>
+
+        <div class="channel">
+          <img class="felixlike-2" src="felixlike.jpeg" />
+          <div class="channel-name-messages">
+            <h3>Felixlike</h3>
+            <p>
+              Video Message<br />
+              Today day was really cool. I walked with my old...
+            </p>
+          </div>
+        </div>
+
+        <div class="channel">
+          <img class="paradeevich" src="paradeevich.jpeg" />
+          <div class="channel-name-messages">
+            <h3>PARADEEVICH</h3>
+            <p>
+              I Challenged the Pros in Different ports // Exclusively in the new
+              video we will...
+            </p>
+          </div>
+        </div>
+
+        <div class="channel">
+          <img class="assel" src="assel.jpeg" />
+          <div class="channel-name-messages">
+            <h3>Assel's English Hub</h3>
+            <p>
+              When is the best time to start learning new language? I started
+              learning English when I w...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="contacts">
+          <img class="contacts-img" src="person.jpeg" />
+          <p>Contacts</p>
+        </div>
+        <div class="calls">
+          <img class="calls-img" src="calls.jpeg" />
+          <p>Calss</p>
+        </div>
+        <div class="chats">
+          <img class="chats-img" src="chats.jpeg" />
+          <p>Chats</p>
+        </div>
+        <div class="settings">
+          <img class="settings-img" src="myphoto.jpeg" />
+          <p>Settings</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
